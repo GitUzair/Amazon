@@ -20,7 +20,7 @@ pipeline {
         always {
             script {
                 def buildStatus = currentBuild.result ?: 'SUCCESS'
-                def slackWebhookUrl = 'https://hooks.slack.com/services/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'
+                def slackWebhookUrl = 'https://hooks.slack.com/services/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'
                 def message = """
                 {
                     "text": "Jenkins Build Status: ${buildStatus}",
